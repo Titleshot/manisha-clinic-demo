@@ -118,6 +118,7 @@ ul { list-style: none; }
   padding: 6px 0;
 }
 .nav a:hover { color: var(--navy); }
+.nav-cta { display: none; }
 .nav a::after {
   content: '';
   position: absolute;
@@ -405,7 +406,9 @@ ul { list-style: none; }
   }
   .nav.open { display: flex; }
   .nav-toggle { display: flex; }
-  .header-actions .btn-outline { display: none; }
+  .header-actions .btn-outline,
+  .header-actions .btn-primary { display: none; }
+  .nav-cta { display: block !important; margin-top: 4px; text-align: center; }
   .hero h1 { font-size: 2rem; }
   .services-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
